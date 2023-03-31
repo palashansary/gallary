@@ -18,13 +18,12 @@ for(const item of items){
     let dataFilter = item.getAttribute('data-filter')
 
   for(const imgs of imgItems){
-    imgs.classList.remove('active');
     imgs.classList.add('hide');
 
     if(imgs.getAttribute('data-item') == dataFilter || dataFilter == "all"){
 
    imgs.classList.remove('hide');
-   imgs.classList.add('active');
+  
     }
   }
     })
